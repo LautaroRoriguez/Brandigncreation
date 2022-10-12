@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.contacto a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ----mobile first 414px----- */
+.grid-area {
+  font-family: "Noto Sans Mono", monospace;
+}
+
+/* ---header--- */
+.logo {
+  width: 15%;
+}
+
+header {
+  background-color: rgba(251, 251, 251, 0.971);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+div h1 {
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ------- BANNER------ */
+.banner {
+  padding: 15px;
+  height: calc(85vh - 150px);
+  background-image: url(../assets/imagenes/backgroundSection.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-text {
+  text-align: center;
+  font-size: 1rem;
+  background-color: hsla(0deg, 54%, 73%, 0.642);
+  position: relative;
+  top: 15%;
+}
+.banner-text h2 {
+  font-size: 2rem;
+}
+.banner-text h2 h3 {
+  font-size: 1.5rem;
+}
+
+/* ----footer------ */
+.logo-footer {
+  width: 50px;
+}
+
+footer {
+  background-color: rgb(242, 224, 198);
+  background-size: cover;
+  padding: 5px;
+  height: calc(16vh - 1px);
+}
+
+/* ------para 768px-------- */
+@media (min-width: 768px) {
+  .grid-area {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 20% 70% 10%;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+    font-family: "Noto Sans Mono", monospace;
+  }
+  /* -----header -------*/
+  .logo {
+    width: 40%;
+  }
+  header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav {
+    width: 40%;
+  }
+  /*----main----- */
+  main {
+    grid-area: main;
+  }
+  .banner-text {
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: hsla(0deg, 54%, 73%, 0.642);
+    position: relative;
+    top: 15%;
+  }
+  /*------footer-----*/
+  footer {
+    grid-area: footer;
+  }
+  .logo-footer {
+    width: 40px;
+  }
+  .redes {
+    font-size: 1.1rem;
+  }
+}
+/* -----para 1024 px---- */
+@media (min-width: 1024px) {
+  .grid-area {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 20% 70% 10%;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+    font-family: "Noto Sans Mono", monospace;
+  }
+  /* -----header -------*/
+  .logo {
+    width: 40%;
+  }
+  header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav {
+    width: 40%;
+  }
+  /* ---main---- */
+  main {
+    grid-area: main;
+    display: grid;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+  .banner {
+    height: 100%;
+  }
+  .banner-text {
+    justify-self: center;
+    align-self: stretch;
+    font-size: 1rem;
+  }
+  .banner-text h2 h3 {
+    font-size: 1, 5rem;
+  }
+  /*----- footer---- */
+  footer {
+    grid-area: footer;
+  }
+  .logo-footer {
+    width: 30px;
+  }
+}/*# sourceMappingURL=estilos.css.map */

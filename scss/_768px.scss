@@ -1,0 +1,48 @@
+/* ------para 768px-------- */
+@media (min-width: 768px) {
+    .grid-area {
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+            grid-template-rows: 20% 70% 10%;
+            grid-template-areas:
+                "header header header"
+                "main main main"
+                "footer footer footer";
+            font-family: 'Noto Sans Mono', monospace;           
+        }
+        /* -----header -------*/
+        .logo {
+            width: 40%;
+        }
+        header {
+            grid-area: header;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            nav {
+                width: 40%;
+            }
+        }
+        /*----main----- */
+        main {
+            grid-area: main;
+        }
+        .banner-text {
+            text-align: center;
+            font-size: 1.2rem;
+            background-color: hsla(0, 54%, 73%, 0.642);
+            position: relative;
+            top: 15%;
+        }
+        /*------footer-----*/
+        footer {
+            grid-area: footer;  
+        }
+        .logo-footer {
+            width: 40px;
+        }
+        .redes{
+            font-size: 1.1rem;
+        }
+    }

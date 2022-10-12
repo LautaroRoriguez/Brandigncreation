@@ -1,0 +1,52 @@
+/* ----mobile first 414px----- */
+.grid-area{
+    font-family: 'Noto Sans Mono', monospace;
+}
+/* ---header--- */
+.logo {
+    width: 15%;
+}
+header {
+    background-color: rgba(251, 251, 251, 0.971);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+div h1 {
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+/* ------- BANNER------ */
+.banner {
+    padding: 15px;
+    height: calc(85vh - 150px);
+    background-image: url(../assets/imagenes/backgroundSection.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-text {
+    text-align: center;
+    font-size: 1rem;
+    background-color: hsla(0, 54%, 73%, 0.642);
+    position: relative;
+    top: 15%;
+    h2 {
+        font-size: 2rem;
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+}
+/* ----footer------ */
+.logo-footer {
+    width: 50px;
+}
+footer {
+    background-color: rgb(242, 224, 198);
+    background-size: cover;
+    padding: 5px;
+    height: calc(16vh - 1px);
+}

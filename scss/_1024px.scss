@@ -1,0 +1,54 @@
+
+    /* -----para 1024 px---- */
+    @media (min-width:1024px) {
+        .grid-area {
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-template-rows: 20% 70% 10%;
+            grid-template-areas:
+                "header header header"
+                "main main main"
+                "footer footer footer";
+            font-family: 'Noto Sans Mono', monospace;
+        }
+        /* -----header -------*/
+        .logo {
+            width: 40%;
+        }
+        header {
+            grid-area: header;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            nav {
+                width: 40%;
+            }
+        }                
+        /* ---main---- */
+        main {
+            grid-area: main;
+            display: grid;
+            flex-direction: column;
+            justify-content: stretch;
+            align-items: stretch;
+        }
+        .banner {
+            height: 100%;
+        }
+        .banner-text {
+            justify-self: center;
+            align-self: stretch;
+            font-size: 1rem;
+            h2 h3 {
+                font-size: 1,5rem;
+            }
+        }
+        /*----- footer---- */
+        footer {
+            grid-area: footer;
+        }
+        .logo-footer {
+            width: 30px;
+        }
+    }
